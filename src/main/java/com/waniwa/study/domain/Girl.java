@@ -1,27 +1,20 @@
 package com.waniwa.study.domain;
 
-import org.hibernate.validator.constraints.NotBlank;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.validation.constraints.Min;
-import javax.validation.constraints.NotNull;
+
+
+
 
 /**
  * @author wanniwa
  * @date 2018/3/17 23:37
  */
-@Entity
+
 public class Girl {
-    @Id
-    @GeneratedValue
+
     private Integer id;
-    @NotBlank(message = "这个字段比传")
     private String cupSize;
-    @Min(value = 18,message = "未成年少女禁止入内")
     private Integer age;
-    @NotNull(message = "金钱必传")
     private Double money;
 
 
