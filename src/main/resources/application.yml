@@ -12,7 +12,6 @@ spring:
       additional-paths: src/main/java
   thymeleaf:
     cache: false
-
 server:
   tomcat:
     uri-encoding: utf-8

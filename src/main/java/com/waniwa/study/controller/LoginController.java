@@ -3,7 +3,7 @@ package com.waniwa.study.controller;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.ModelMap;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 /**
@@ -15,8 +15,8 @@ public class LoginController {
     /** logger */
     private static final Logger log = LoggerFactory.getLogger(LoginController.class);
     @RequestMapping("/")
-    public String index(ModelMap modelMap) {
-        modelMap.put("name","ning");
-        return "pages/index/index.html";
+    public String index(Model model) {
+        model.addAttribute("name","ning");
+        return "account/index";
     }
 }
