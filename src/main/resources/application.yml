@@ -5,7 +5,7 @@ spring:
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://rm-bp1ks66d7iou183cnqo.mysql.rds.aliyuncs.com:3306/dbgirl?useUnicode=true&characterEncoding=utf-8&useSSL=false
     username: root
-    password: Wang1993
+    password: W1a9n9g3
   devtools:
     restart:
       enabled: true
