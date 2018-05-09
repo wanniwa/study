@@ -10,7 +10,7 @@ html, body ,.study-user-full-height{
     position: relative;
     left: 0;
     top: 0;
-    padding: 110px 0;
+    padding: 50px 0 110px;
     min-height: 100%;
     box-sizing: border-box;
 }
@@ -28,16 +28,99 @@ html, body ,.study-user-full-height{
     padding: 20px;
 }
 
-.layadmin-user-login-header p {
+.study-user-login-header p {
     font-weight: 300;
     color: #999;
 }
 
 .logo-name {
-    color: #a60e39;
     font-size: 130px;
     font-weight: 600;
     letter-spacing: -12px;
     margin-bottom: 0;
     margin-left: -20px;
+}
+
+.study-user-login-icon {
+    position: absolute;
+    left: 1px;
+    top: 1px;
+    width: 38px;
+    line-height: 36px;
+    text-align: center;
+    color: #d2d2d2;
+}
+
+.study-user-login-body .layui-form-item {
+    position: relative;
+}
+
+.study-user-login-body .layui-form-item .layui-input {
+    padding-left: 38px;
+}
+
+.study-user-login-codeimg {
+    max-height: 38px;
+    width: 100%;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.study-user-jump-change {
+    float: right;
+}
+
+.study-link {
+    color: #a60e39;
+}
+.study-color-theme{
+    color: #a60e39;
+}
+.study-color-bg-theme{
+    background-color: #a60e39;
+}
+
+.study-user-login-other {
+    position: relative;
+    font-size: 0;
+    line-height: 38px;
+    padding-top: 20px;
+}
+
+.study-user-login-other .layui-icon {
+    position: relative;
+    top: 2px;
+    font-size: 26px;
+}
+.study-user-login-other>* {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    font-size: 14px;
+}
+.layui-icon-login-qq {
+    color: #3492ED;
+}
+.layui-icon-login-wechat {
+    color: #4DAF29;
+}
+.layui-icon-login-weibo {
+    color: #CF1900;
+}
+
+.study-user-login-footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    line-height: 30px;
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
+    color: rgba(0,0,0,.5);
+}
+
+.study-user-login-footer a {
+    padding: 0 5px;
+    color: rgba(0,0,0,.5);
 }
