@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>开始使用layui</title>
+	<link th:href="@{/layui/css/layui.css}" href="../../static/layui/css/layui.css" rel="stylesheet"/>
+	<link th:href="@{/css/login/login.css}" href="../../static/css/login/login.css" rel="stylesheet"/>
+</head>
+<body class="gray-bg layui-layout-body">
+<div class="study-user-full-height">
+	<div class="study-user-login">
+		<div class="study-user-login-main">
+			<div class="study-user-login-header study-user-login-box">
+				<h1 class="logo-name">study</h1>
+				<h3>欢迎使用万物cms管理平台</h3>
+			</div>
+
+
+			<div   class="study-user-login-box study-user-login-body layui-form" >
+				<div class="form-group">
+					<input type="email" id="loginName" name="loginName" class="form-control" placeholder="用户名" required="required">
+				</div>
+				<div class="form-group">
+					<input type="password" id="password" name="password" class="form-control" required="required" placeholder="密码">
+				</div>
+			</div>
+			<button type="submit" class="btn btn-primary block full-width m-b" id="logo-btn">登 录</button>
+		</div>
+	</div>
+</div>
+<script>if(window.top !== window.self){ window.top.location = window.location;}</script>
+</body>
+<!-- 你的HTML代码 -->
+<script th:src="@{layui/layui.js}" src="../../static/layui/layui.js"></script>
+<script>
+    // //一般直接写在一个js文件中
+    // layui.use(['layer', 'form'], function(){
+    //     var layer = layui.layer
+    //         ,form = layui.form;
+    //
+    //     layer.msg('Hello World');
+    // });
+</script>
+</body>
+</html>

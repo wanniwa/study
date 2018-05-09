@@ -16,7 +16,6 @@ public class LoginController {
     private static final Logger log = LoggerFactory.getLogger(LoginController.class);
     @RequestMapping("/")
     public String index(Model model) {
-        model.addAttribute("name","ning");
-        return "account/index";
+        return "login/login";
     }
 }
