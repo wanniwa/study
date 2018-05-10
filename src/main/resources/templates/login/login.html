@@ -26,7 +26,8 @@
                 <div class="layui-form-item">
                     <label class="study-user-login-icon layui-icon layui-icon-password"
                            for="study-user-login-password"></label>
-                    <input type="password" name="password" id="study-user-login-password" lay-verify="required"  lay-verType="tips"
+                    <input type="password" name="password" id="study-user-login-password" lay-verify="required"
+                           lay-verType="tips"
                            placeholder="密码" class="layui-input" autocomplete="new-password">
                 </div>
                 <div class="layui-form-item">
@@ -34,12 +35,14 @@
                         <div class="layui-col-xs7">
                             <label class="study-user-login-icon layui-icon layui-icon-vercode"
                                    for="study-user-login-vercode"></label>
-                            <input type="text" name="vercode" id="study-user-login-vercode" lay-verify="required"  lay-verType="tips"
+                            <input type="text" name="vercode" id="study-user-login-vercode" lay-verify="required"
+                                   lay-verType="tips"
                                    placeholder="图形验证码" class="layui-input">
                         </div>
                         <div class="layui-col-xs5">
                             <div style="margin-left: 10px;">
-                                <img src="https://www.oschina.net/action/user/captcha" class="study-user-login-codeimg"
+                                <img src="valicode.do" class="study-user-login-codeimg"
+                                     onclick="this.src ='valicode.do'+'?'+Math.random()"
                                      id="study-user-get-vercode">
                             </div>
                         </div>
@@ -81,18 +84,22 @@
         </div>
     </div>
 </div>
-<script>if (window.top !== window.self) {
-    window.top.location = window.location;
-}</script>
+
 </body>
 <!-- 你的HTML代码 -->
 <script th:src="@{layui/layui.js}" src="../../static/layui/layui.js"></script>
 <script>
+    if (window.top !== window.self) {
+        window.top.location = window.location;
+    }
     //一般直接写在一个js文件中
     layui.use(['layer', 'form'], function () {
         var layer = layui.layer
-            , form = layui.form;
+            , form = layui.form,
+            $ = layui.$;
         form.render();
+
+
     });
 </script>
 </body>
