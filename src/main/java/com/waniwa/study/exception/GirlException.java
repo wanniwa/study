@@ -1,7 +1,7 @@
-package exception;
+package com.waniwa.study.exception;
 
 
-import enums.ResultEnum;
+import com.waniwa.study.enums.ResultEnum;
 
 /**
  * Created by 廖师兄

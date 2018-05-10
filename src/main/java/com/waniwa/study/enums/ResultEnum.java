@@ -1,4 +1,4 @@
-package enums;
+package com.waniwa.study.enums;
 
 /**
  * Created by 廖师兄

@@ -2,7 +2,7 @@ package com.waniwa.study;
 
 import com.waniwa.study.domain.Result;
 import com.waniwa.study.utils.ResultUtil;
-import exception.GirlException;
+import com.waniwa.study.exception.GirlException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.ControllerAdvice;
