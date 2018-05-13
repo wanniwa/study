@@ -1,14 +1,10 @@
 package com.waniwa.study.domain;
 
+import lombok.Data;
+
+import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Date;
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.Table;
-import lombok.Data;
 
 /**
  * 操作日志
@@ -36,8 +32,8 @@ public class SysOperationLog implements Serializable {
   /**
    * 日志名称
    */
-  @Column(name = "logname")
-  private String logname;
+  @Column(name = "log_name")
+  private String log_name;
 
   /**
    * 用户id

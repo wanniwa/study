@@ -84,4 +84,8 @@ public class SysUser implements Serializable {
     @ManyToMany(fetch = FetchType.EAGER)
     @JoinTable(name = "SysUserRole" ,joinColumns = {@JoinColumn(name = "userId")},inverseJoinColumns = {@JoinColumn(name = "roleId" )})
     private List<SysRole> roleList;
+
+    public String getCredentialsSalt(){
+        return this.account+this.salt;
+    }
 }

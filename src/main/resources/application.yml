@@ -1,9 +1,17 @@
 spring:
   profiles:
     active: dev
+  datasource:
+      driver-class-name: com.mysql.jdbc.Driver
+      url: jdbc:mysql://rm-bp1ks66d7iou183cnqo.mysql.rds.aliyuncs.com:3306/study?useUnicode=true&characterEncoding=utf-8&useSSL=false
+      username: root
+      password: W1a9n9g3
   jpa:
     database: mysql
     show-sql: true
+    properties:
+      hibernate:
+        dialect : org.hibernate.dialect.MySQL5Dialect
     hibernate:
       ddl-auto: update
   devtools:
@@ -12,6 +20,9 @@ spring:
       additional-paths: src/main/java
   thymeleaf:
     cache: false
+    prefix: classpath:/templates/
+    suffix: .html
+
 server:
   tomcat:
     uri-encoding: utf-8
