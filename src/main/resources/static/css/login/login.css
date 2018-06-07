@@ -71,6 +71,10 @@ html, body ,.study-user-full-height{
     float: right;
 }
 
+.study-middle{
+    margin:0 auto
+}
+
 .study-link {
     color: #a60e39;
 }

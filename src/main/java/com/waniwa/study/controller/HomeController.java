@@ -68,7 +68,7 @@ public class HomeController {
 
     @RequestMapping("/valicode.do")
     public void valicode(HttpServletResponse response, HttpSession session) throws Exception{
-        //利用图片工具生成图片
+        //利用图片工具生成图片kaptcha
         //第一个参数是生成的验证码，第二个参数是生成的图片
         Object[] objs = ImageUtil.createImage();
         //将验证码存入Session
