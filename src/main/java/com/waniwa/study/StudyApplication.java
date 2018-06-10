@@ -8,7 +8,7 @@ import org.springframework.boot.autoconfigure.domain.EntityScan;
  * @author Administrator
  */
 @SpringBootApplication
-@EntityScan(basePackages = {"com.waniwa.study.domain" })
+@EntityScan(basePackages = {"com.waniwa.study.pojo" })
 public class StudyApplication {
 
     public static void main(String[] args) {

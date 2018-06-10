@@ -1,6 +1,6 @@
 package com.waniwa.study.service.impl;
 
-import com.waniwa.study.domain.SysUser;
+import com.waniwa.study.pojo.SysUser;
 import com.waniwa.study.repository.SysUserRepository;
 import com.waniwa.study.service.ISysUserService;
 import org.springframework.stereotype.Service;

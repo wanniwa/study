@@ -24,7 +24,7 @@ import java.util.Map;
 @Controller
 public class HomeController {
     /** logger */
-    private static final Logger log = LoggerFactory.getLogger(HomeController.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(HomeController.class);
 
     @RequestMapping({"/","/index"})
     public String index(){

@@ -1,6 +1,6 @@
 package com.waniwa.study;
 
-import com.waniwa.study.domain.Result;
+import com.waniwa.study.pojo.Result;
 import com.waniwa.study.utils.ResultUtil;
 import com.waniwa.study.exception.GirlException;
 import org.slf4j.Logger;

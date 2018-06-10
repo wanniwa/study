@@ -1,4 +1,4 @@
-package com.waniwa.study.domain;
+package com.waniwa.study.pojo;
 
 import java.io.Serializable;
 import java.util.Date;

@@ -1,7 +1,7 @@
 package com.waniwa.study.utils;
 
 
-import com.waniwa.study.domain.Result;
+import com.waniwa.study.pojo.Result;
 
 /**
  * Created by 廖师兄

@@ -1,4 +1,4 @@
-package com.waniwa.study.domain;
+package com.waniwa.study.pojo;
 
 import lombok.Data;
 
@@ -55,11 +55,6 @@ public class SysUser implements Serializable {
      * 电话
      */
     private String phone;
-
-    /**
-     * 角色id
-     */
-    private String roleId;
 
     /**
      * 部门id

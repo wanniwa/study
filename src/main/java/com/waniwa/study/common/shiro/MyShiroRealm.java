@@ -1,8 +1,8 @@
 package com.waniwa.study.common.shiro;
 
-import com.waniwa.study.domain.SysPermission;
-import com.waniwa.study.domain.SysRole;
-import com.waniwa.study.domain.SysUser;
+import com.waniwa.study.pojo.SysPermission;
+import com.waniwa.study.pojo.SysRole;
+import com.waniwa.study.pojo.SysUser;
 import com.waniwa.study.service.ISysUserService;
 import org.apache.shiro.authc.*;
 import org.apache.shiro.authz.AuthorizationInfo;
@@ -57,7 +57,7 @@ public class MyShiroRealm extends AuthorizingRealm {
         //账号判断;
         //明文: 若存在，将此用户存放到登录认证info中，无需自己做密码对比，Shiro会为我们进行密码对比校验
         //用户名,密码,realm名称
-        return new SimpleAuthenticationInfo(user.getAccount(), user.getPassword(), getName());
+        return new SimpleAuthenticationInfo(user, user.getPassword(), getName());
     }
 
 

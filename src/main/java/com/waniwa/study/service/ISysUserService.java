@@ -1,6 +1,6 @@
 package com.waniwa.study.service;
 
-import com.waniwa.study.domain.SysUser;
+import com.waniwa.study.pojo.SysUser;
 
 /**
  * @author 王宁

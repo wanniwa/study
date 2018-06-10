@@ -1,4 +1,4 @@
-package com.waniwa.study.domain;
+package com.waniwa.study.pojo;
 
 import java.io.Serializable;
 import javax.persistence.Column;
@@ -10,12 +10,12 @@ import javax.persistence.Table;
 import lombok.Data;
 
 /**
- * 部门表
+ * 字典表
  */
-@Data
 @Entity
-@Table(name = "sys_dept")
-public class SysDept implements Serializable {
+@Table(name = "sys_dict")
+@Data
+public class SysDict implements Serializable {
   private static final long serialVersionUID = 1L;
 
   /**
@@ -23,8 +23,8 @@ public class SysDept implements Serializable {
    */
   @Id
   @GeneratedValue(strategy = GenerationType.SEQUENCE)
-  @Column(insertable = false, name = "dept_id", nullable = false)
-  private Long deptId;
+  @Column(name = "dict_id", insertable = false, nullable = false)
+  private Long dictId;
 
   /**
    * 排序
@@ -33,40 +33,22 @@ public class SysDept implements Serializable {
   private Integer sort;
 
   /**
-   * 父部门id
+   * 父级字典
    */
   @Column(name = "parent_id")
   private Integer parentId;
 
   /**
-   * 父级ids
+   * 名称
    */
-  @Column(name = "pids")
-  private String pids;
-
-  /**
-   * 简称
-   */
-  @Column(name = "simplename")
-  private String simplename;
-
-  /**
-   * 全称
-   */
-  @Column(name = "fullname")
-  private String fullname;
+  @Column(name = "name")
+  private String name;
 
   /**
    * 提示
    */
   @Column(name = "tips")
   private String tips;
-
-  /**
-   * 版本（乐观锁保留字段）
-   */
-  @Column(name = "version")
-  private Integer version;
 
   
 }
